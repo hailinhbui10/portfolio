@@ -817,6 +817,13 @@ section {
   color: #fff;
 }
 
+@media  (max-width:992px) {
+  .contact .info .github{
+    margin-top: 40px;
+  }
+  
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
