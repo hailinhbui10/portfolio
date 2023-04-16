@@ -73,24 +73,6 @@
   });
 
   /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -102,9 +84,7 @@
     })
   });
 
-})()
-
-/**
+  /**
    * Mobile nav toggle
    */
 on('click', '.mobile-nav-toggle', function(e) {
@@ -122,3 +102,6 @@ on('click', '.navbar .dropdown > a', function(e) {
     this.nextElementSibling.classList.toggle('dropdown-active')
   }
 }, true)
+
+})()
+

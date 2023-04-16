@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", monospace;
   color: #0d1e2d;
 }
 
@@ -30,11 +30,15 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", monospace;
 }
 
 .section {
   padding: 7rem 0;
+}
+
+.filter-group {
+  cursor: pointer;
 }
 
 .filters a {
@@ -254,7 +258,9 @@ section {
 */
 
 #header{
-  background-color: #f8f9fa;
+  background-color: #F5ECF9;
+  height: 50px;
+  align-items: center;
 }
 
 .navbar {
@@ -279,10 +285,10 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-family: "Poppins", monospace;
+  font-size: 18px;
   font-weight: 500;
-  color: #a858c8;
+  color: #45505b;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -390,13 +396,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #000;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #b59cd9;
+  border-left: 2px solid #F5ECF9;
   position: relative;
 }
 
@@ -405,8 +411,8 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  color: #b59cd9;
+  font-family: "Poppins", monospace;
+  color: #a858c8;
   margin-bottom: 10px;
 }
 
@@ -440,7 +446,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #b59cd9;
+  border: 2px solid #a858c8;
 }
 
 /*--------------------------------------------------------------
@@ -467,14 +473,14 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #b59cd9;
+  background: #F5ECF9;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #b59cd9;
+  border: 1px solid #F5ECF9;
 }
 
 .skills .icon i {
-  color: #fff;
+  color: #b59cd9;
   font-size: 24px;
   line-height: 0;
 }
@@ -486,11 +492,7 @@ section {
   font-size: 18px;
 }
 
-.skills .title a {
-  color: #343a40;
-}
-
-.skills .title a:hover {
+.skills .title .h4 {
   color: #b59cd9;
 }
 
@@ -530,10 +532,10 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #f8f9fa;
+  background: #F5ECF9;
   position: relative;
   text-align: center;
-  color: #0d1e2d;
+  color: #b59cd9;
 }
 
 .social a span {
@@ -546,4 +548,5 @@ section {
 
 .social a:hover {
   color: #000;
+  background-color: #b59cd9;
 }
