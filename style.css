@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Poppins", monospace;
+  font-family: "Raleway", sans-serif;
   color: #0d1e2d;
 }
 
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #777;
 }
 
 h1,
@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Poppins", monospace;
+  font-family: "Raleway", sans-serif;
 }
 
 .section {
@@ -43,7 +43,7 @@ h6,
 
 .filters a {
   text-decoration: none;
-  color: #000;
+  color: #777;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -54,7 +54,7 @@ h6,
 .filters a:focus,
 .filters a:active {
   text-decoration: none;
-  color: #a858c8;;
+  color: #a858c8 ;;
 
 }
 
@@ -65,11 +65,11 @@ h6,
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #a858c8;
+  background-color: #a858c8 ;
 }
 
 .filters a.active {
-  color: #a858c8;
+  color: #a858c8 ;
 }
 
 .filters a.active:before {
@@ -79,7 +79,7 @@ h6,
   right: 10px;
   bottom: 0;
   height: 1px;
-  background-color: #a858c8;;
+  background-color: #a858c8 ;;
 }
 
 .item {
@@ -188,7 +188,7 @@ h6,
   top: 0.7rem;
   width: 10px;
   height: 2px;
-  background: #000;
+  background: #777;
 }
 
 .custom-progress {
@@ -197,7 +197,7 @@ h6,
 }
 
 .custom-progress .progress-bar {
-  background: #000;
+  background: #777;
 }
 
 /*--------------------------------------------------------------
@@ -220,7 +220,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #a858c8 ;
 }
 
 .section-title h2::before {
@@ -240,13 +240,67 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #b59cd9;
+  background: #a858c8 ;
   bottom: 0;
   left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #F5ECF9;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  z-index: 997;
+  padding: 15px 0;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #777;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header Social Links
+--------------------------------------------------------------*/
+.header-social-links {
+  padding-right: 15px;
+}
+
+.header-social-links a {
+  color: #777;
+  padding-left: 6px;
+  display: inline-block;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.header-social-links a:hover {
+  color: #a858c8 ;
 }
 
 
@@ -256,13 +310,6 @@ section {
 /**
 * Desktop Navigation 
 */
-
-#header{
-  background-color: #F5ECF9;
-  height: 50px;
-  align-items: center;
-}
-
 .navbar {
   padding: 0;
 }
@@ -277,6 +324,14 @@ section {
 
 .navbar li {
   position: relative;
+  padding: 10px 0 10px 28px;
+  text-transform: uppercase;
+}
+
+.navbar a,
+ {
+
+
 }
 
 .navbar a,
@@ -284,13 +339,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Poppins", monospace;
-  font-size: 18px;
-  font-weight: 500;
-  color: #45505b;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #777;
   white-space: nowrap;
   transition: 0.3s;
+  position: relative;
 }
 
 .navbar a i,
@@ -300,11 +355,21 @@ section {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #a858c8;
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #a858c8 ;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar .active a {
+  color:#a858c8 
 }
 
 
@@ -321,8 +386,9 @@ section {
 /**
 * Mobile Navigation 
 */
+
 .mobile-nav-toggle {
-  color: #a858c8;
+  color: #777;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -331,7 +397,7 @@ section {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #777;
 }
 
 @media (max-width: 991px) {
@@ -351,7 +417,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(22, 30, 56, 0.9);
+  background: rgba(9, 9, 9, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -370,6 +436,7 @@ section {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
+  border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -377,15 +444,14 @@ section {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
   font-size: 15px;
-  color: #a858c8;
+  padding-right: 15px;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #a858c8;
+  color: #a858c8 ;
 }
 
 /*--------------------------------------------------------------
@@ -396,13 +462,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #000;
+  color: #777;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #F5ECF9;
+  border-left: 2px solid #a858c8;
   position: relative;
 }
 
@@ -411,8 +477,8 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", monospace;
-  color: #a858c8;
+  font-family: "Raleway", sans-serif;
+  color: #a858c8 ;
   margin-bottom: 10px;
 }
 
@@ -437,6 +503,7 @@ section {
   padding-bottom: 0;
 }
 
+/* Circle of resume item */
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -446,17 +513,8 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #a858c8;
+  border: 2px solid #a858c8 ;
 }
-
-/*--------------------------------------------------------------
-# about
---------------------------------------------------------------*/
-
-/* .about{
-  background-color: #e3e3e3;
-} */
-
 
 /*--------------------------------------------------------------
 # skills
@@ -480,7 +538,7 @@ section {
 }
 
 .skills .icon i {
-  color: #b59cd9;
+  color: #a858c8 ;
   font-size: 24px;
   line-height: 0;
 }
@@ -493,7 +551,7 @@ section {
 }
 
 .skills .title .h4 {
-  color: #b59cd9;
+  color: #a858c8 ;
 }
 
 .skills .description {
@@ -516,6 +574,16 @@ section {
 
 }
 
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio-details .readmore {
+  color: #a858c8;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -524,29 +592,23 @@ section {
 }
 
 .footer a {
-  color: #000;
+  color: #a858c8;
 }
 
-.social a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #F5ECF9;
-  position: relative;
-  text-align: center;
-  color: #b59cd9;
+/*--------------------------------------------------------------
+# Project Details
+--------------------------------------------------------------*/
+.portfolio-details .text-muted {
+  background-color: #F5ECF9;
+  margin-right: 10px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
-.social a span {
-  display: inline-block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.social a:hover {
-  color: #000;
-  background-color: #b59cd9;
+.portfolio-details .h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  color:#a858c8
 }
